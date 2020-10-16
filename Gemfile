@@ -19,4 +19,3 @@ group :jekyll_plugins do
 end
 
 gem 'jekyll-include-cache'
-gem 'minimal-mistakes-jekyll'
