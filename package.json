@@ -1,0 +1,12 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:DawidJanczak/dawidjanczak.github.io.git",
+  "author": "Dawid Janczak <dawid.janczak@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss-cli": "^8.1.0",
+    "tailwindcss": "^1.9.3"
+  }
+}
