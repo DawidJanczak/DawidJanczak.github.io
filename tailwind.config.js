@@ -10,7 +10,13 @@ module.exports = {
     '*.html'
   ],
   theme: {
-    extend: {},
+    typography: {
+      default: {
+        css: {
+          a: false
+        }
+      }
+    }
   },
   variants: {},
   plugins: [

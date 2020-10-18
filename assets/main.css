@@ -582,11 +582,6 @@ video {
   margin-bottom: 1.2em;
 }
 
-.prose a {
-  color: #1a202c;
-  text-decoration: underline;
-}
-
 .prose strong {
   color: #1a202c;
   font-weight: 600;
