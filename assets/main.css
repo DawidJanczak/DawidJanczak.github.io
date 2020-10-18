@@ -928,8 +928,17 @@ video {
   clear: both;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .leading-normal {
   line-height: 1.5;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .mb-3 {
@@ -960,6 +969,10 @@ video {
 
 .visible {
   visibility: visible;
+}
+
+.w-2\/5 {
+  width: 40%;
 }
 
 @keyframes spin {

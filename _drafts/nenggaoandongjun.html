@@ -4,53 +4,40 @@ author: Dawid
 excerpt: Considered one of the most beautiful hikes in Taiwan, this multi-day trek features multiple
   seas of bamboo, lakes and countless deers creeping near your tent at night.
 tags: "Top 100"
+info:
+  - dt: Difficulty
+    dd: "4/5"
+  - dt: Duration
+    dd: 4 days
+  - dt: Date of the hike
+    dd: 2020-10-01 &ndash; 2020-10-04
+  - dt: Group size
+    dd: 2 + 2, myself and Tati always a few hours behind Ada and Peggy
+  - dt: Public transport
+    dd: Unavailable
+  - dt: Total length
+    dd: 55km
+  - dt: Total elevation gain
+    dd: 4100m
+  - dt: Water availability
+    dd: Good
+  - dt: Tent necessary?
+    dd: "Yes"
+  - dt: Closest Hot Spring
+    dd: <a href="https://goo.gl/maps/bqSBCwEZaHBrcWYL8")>Lushan Hot Spring</a>
 ---
 <h2>General information</h2>
 <header>
-  <dl>
-    <dt>Difficulty</dt>
-    <dd>4/5</dd>
-  </dl>
-  <dl>
-    <dt>Duration</dt>
-    <dd>4 days</dd>
-    <!-- Add note about duration -->
-    <!-- TODO consider a dictionary of chinese names used throughout the article -->
-    <!-- TODO information about water availability -->
-    <!-- TODO fix clears -->
-  </dl>
-  <dl>
-    <dt>Date of the hike</dt>
-    <dd>2020-10-01 &ndash; 2020-10-04</dd>
-  </dl>
-  <dl>
-    <dt>Group size</dt>
-    <dd>2 + 2, myself and Tati always a few hours behind Ada and Peggy</dd>
-  </dl>
-  <dl>
-    <dt>Public transport</dt>
-    <dd>No</dd>
-  </dl>
-  <dl>
-    <dt>Total Length</dt>
-    <dd>55km</dd>
-  </dl>
-  <dl>
-    <dt>Total Elevation gain</dt>
-    <dd>4100m</dd>
-  </dl>
-  <dl>
-    <dt>Water availability</dt>
-    <dd>Good</dd>
-  </dl>
-  <dl>
-    <dt>Tent necessary?</dt>
-    <dd>Yes</dd>
-  </dl>
-  <dl>
-    <dt>Closest Hot Spring</dt>
-    <dd><a href="https://goo.gl/maps/bqSBCwEZaHBrcWYL8")>Lushan Hot Spring</a></dd>
-  </dl>
+  <!-- Add note about duration -->
+  <!-- TODO consider a dictionary of chinese names used throughout the article -->
+  <!-- TODO information about water availability -->
+  <!-- TODO fix clears -->
+  {% for def in page.info %}
+    <dl class="flex my-1">
+      <dt class="w-2/5 font-semibold">{{def.dt}}</dt>
+      <dd class="w-2/5">{{def.dd}}</dd>
+    </dl>
+  {% endfor %}
 </header>
 <section>
   <h2>Before you begin</h2>
