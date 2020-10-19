@@ -939,6 +939,10 @@ video {
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .clearfix:after {
   content: "";
   display: table;
