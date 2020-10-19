@@ -2,6 +2,7 @@
 <html lang="en-GB">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/main.css">
     {% feed_meta %}
@@ -9,10 +10,10 @@
   </head>
   <body class="leading-normal px-4 py-16">
     <div class="flex">
-      <div class="mr-6">
+      <div>
         {% include navigation.html %}
       </div>
-      <div>
+      <div class="mx-6">
         {{ content }}
       </div>
     </div>
