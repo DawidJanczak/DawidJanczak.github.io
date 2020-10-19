@@ -15,3 +15,8 @@ h2,
 strong {
   color: #333;
 }
+
+/* Need high specificity to override `prose a` */
+a.image-link {
+  text-decoration: none;
+}

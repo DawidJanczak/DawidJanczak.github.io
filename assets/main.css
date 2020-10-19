@@ -582,6 +582,11 @@ video {
   margin-bottom: 1.2em;
 }
 
+.prose a {
+  color: #1a202c;
+  text-decoration: underline;
+}
+
 .prose strong {
   color: #1a202c;
   font-weight: 600;
@@ -1048,6 +1053,12 @@ h1,
 h2,
 strong {
   color: #333;
+}
+
+/* Need high specificity to override `prose a` */
+
+a.image-link {
+  text-decoration: none;
 }
 
 @media (min-width: 640px) {

@@ -10,15 +10,7 @@ module.exports = {
     '_includes/*.html',
     '*.html'
   ],
-  theme: {
-    typography: {
-      default: {
-        css: {
-          a: false
-        }
-      }
-    }
-  },
+  theme: {},
   variants: {},
   plugins: [
     require('@tailwindcss/typography')
