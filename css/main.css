@@ -19,11 +19,11 @@ strong {
   color: #333;
 }
 
-ol {
+.toc ol {
   counter-reset: item;
 }
 
-li:before {
+.toc li:before {
   content: counters(item, ".") " ";
   counter-increment: item;
 }
