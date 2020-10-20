@@ -26,7 +26,7 @@ info:
   - dt: Closest Hot Spring
     dd: <a href="https://goo.gl/maps/bqSBCwEZaHBrcWYL8")>Lushan Hot Spring</a>
 ---
-<h2>General information</h2>
+<h2 class="text-4xl font-bold">General information</h2>
 <header>
   <!-- Add note about duration -->
   <!-- TODO consider a dictionary of chinese names used throughout the article -->
@@ -42,8 +42,22 @@ info:
       <dd class="w-2/5">{{def.dd}}</dd>
     </dl>
   {% endfor %}
+  <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-8" role="alert">
+    <div class="flex">
+      <div class="py-1">
+          <svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/>
+          </svg>
+      </div>
+      <div>
+        <p class="font-bold">This is a relatively fast multi day hike</p>
+        <p class="text-sm">We did this hike in 4 days and it's normally done in 5 or 6. Make sure you read through alternative
+        plans and plan your trip according to your experience and fitness level. I do not recommend making this your first mutli-day Top 100
+        trip, there are easier ones out there.</p>
+      </div>
+    </div>
+  </div>
 </header>
-<section>
+<section class="prose lg:prose-lg">
   <h2>Before you begin</h2>
   <h3>Trail entrances</h3>
   The hike is usually done North to South. The North entrance is at Tunyuan (屯原):<br>
@@ -95,7 +109,7 @@ info:
     you can come back here and take a shower for 100NT.
   </p>
 </section>
-<section>
+<section class="prose lg:prose-lg">
   <h2>Day 1</h2>
   <p>
     We woke up and had our breakfast at the hotel at 4, hopped on the car and after a short drive were lucky enough to find a parking spot

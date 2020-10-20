@@ -3,6 +3,6 @@ build: export NODE_ENV=production
 build:
 	@npx postcss -o assets/main.css css/*.css
 
-.PHONY: postcss
-postcss:
+.PHONY: build-dev
+build-dev:
 	@npx postcss -o assets/main.css css/*.css
