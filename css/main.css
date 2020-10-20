@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   max-width: 50rem;
@@ -15,7 +19,11 @@ strong {
   color: #333;
 }
 
-/* Need high specificity to override `prose a` */
-a.image-link {
-  text-decoration: none;
+ol {
+  counter-reset: item;
+}
+
+li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
 }

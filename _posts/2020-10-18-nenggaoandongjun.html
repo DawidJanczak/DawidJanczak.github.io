@@ -25,9 +25,35 @@ info:
     dd: "Yes"
   - dt: Closest Hot Spring
     dd: <a href="https://goo.gl/maps/bqSBCwEZaHBrcWYL8")>Lushan Hot Spring</a>
+headers:
+  - level: h2
+    text: General information
 ---
 <header>
-  <h2 class="text-4xl font-bold">General information</h2>
+  <div class="bg-gray-500 p-4">
+    <div class="font-semibold mb-1">Table of contents</div>
+    <ol>
+      <li><a href="#general-information">General information</a></li>
+      <li>
+        <a href="#before-you-begin">Before you begin</a>
+        <ol>
+          <li class="ml-4"><a href="#accommodation">Accommodation</a></li>
+          <li class="ml-4"><a href="#transportation">Transportation and parking</a></li>
+          <li class="ml-4"><a href="#trail-entrances">Trail entrances</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#the-hike">The hike</a>
+        <ol>
+          <li class="ml-4"><a href="#day-1">Day 1</a></li>
+          <li class="ml-4"><a href="#day-2">Day 2</a></li>
+          <li class="ml-4"><a href="#day-3">Day 3</a></li>
+          <li class="ml-4"><a href="#day-4">Day 4</a></li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+  <h2 id="general-information" class="text-4xl font-bold">General information</h2>
   <!-- Add note about duration -->
   <!-- TODO consider a dictionary of chinese names used throughout the article -->
   <!-- TODO information about water availability -->
@@ -45,8 +71,9 @@ info:
   <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-8" role="alert">
     <div class="flex">
       <div class="py-1">
-          <svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/>
-          </svg>
+        <svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/>
+        </svg>
       </div>
       <div>
         <p class="font-bold">This is a relatively fast multi day hike</p>
@@ -56,36 +83,54 @@ info:
       </div>
     </div>
   </div>
+  <!-- TODO reconsider this, what's in a section and could we show this information in a better way?
   <h3 class="text-2xl font-semibold">Trail sections</h3>
   <section>
-    {% include section.html name="Section 1: Tunyuan Trail Entrance (屯原登山口) - Monument of Spread Light Across the Land (光被八表)"
+    {% include section.html name="Section 1: Tunyuan Trail Entrance (屯原登山口) &ndash; Monument of Spread Light Across the Land (光被八表)"
     length="16.3km" time_us="5h40min" time_map="6h20min" difficulty="1/5 The only difficult thing about this section is its length"
     accommodation="Tianchi Cabin is certainly the best place to stay and the only cabin on this trail, reservations required. As for
     campsites people camp at trail entrance or Yunhai to make the following (first proper) day shorter. You can also camp around Tianchi and
     there are some spots after that too, but fresh water available only from the cabin." %}
-    {% include section.html name="Section 2: Monument of Spread Light Across the Land (光被八表) - Kaheer Mt (卡賀爾山)"
+    {% include section.html name="Section 2: Monument of Spread Light Across the Land (光被八表) &ndash; Kaheer Mt (卡賀爾山)"
     length="3km" time_us="3h10min" time_map="3h" difficulty="4/5 it's a long climb, but the 4 is mostly due to undergrowth in some parts"
     accommodation="It's possible to camp under the electricity tower and later closer to the peak. Bring water from the cabin or use water
     from the lakes if you camp near the peak." %}
-    {% include section.html name="Section 3: Kaheer Mt (卡賀爾山) - Nenggao Mt (能高山)"
+    {% include section.html name="Section 3: Kaheer Mt (卡賀爾山) &ndash; Nenggao Mt (能高山)"
     length="2km" time_us="2h30min" time_map="2h40min" difficulty="3/5 still a bit of a climb, but not that much undergrowth"
     accommodation="Small lake right after you get down from Kaheer, but probably better camp before or after this section." %}
+    {% include section.html name="Section 4: Nenggao Mt (能高山) &ndash; China Lake (大陸池)"
+    length="1.7km" time_us="55min" time_map="1h05min" difficulty="3/5 downhill, but again lots of undergrowth"
+    accommodation="Plenty of small lakes where you can camp, best (and lowest) campground still at the end." %}
+    {% include section.html name="Section 5: China Lake (大陸池) &ndash; Nenggao South Peak"
+    length="2.7km" time_us="4h" time_map="4h15min" difficulty="4/5 tough steep climb, one or two tricky rope sections"
+    accommodation="Nothing reasonable" %}
+    {% include section.html name="Section 6: Nenggao South Peak &ndash; Nenggao South Peak south saddle campground"
+    length="0.8km" time_us="1h" time_map="70min" difficulty="3/5 steep and tricky downhill"
+    accommodation="The campground at the end, fresh water access to the east." %}
+    {% include section.html name="Section 7: Nenggao South Peak south saddle campground &ndash; Guangtou Mt"
+    length="2.7km" time_us="2h30min" time_map="2h30min" difficulty="2/5 the climb in the beginning is the only tough bit here"
+    accommodation="There are two campgrounds to the left of the trail, both after the downhill from the peak. Better to stay in
+    the previous one." %}
+    {% include section.html name="Section 8: Guangtou Mt &ndash; Baishi Lake"
+    length="1.5km" time_us="1h" time_map="1h40min" difficulty="3/5 dangerous cliff in the beginning, lost of undergrowth later"
+    accommodation="Nothing reasonable, make your way to the lake." %}
   </section>
+  -->
 </header>
-<section class="prose lg:prose-lg mt-5">
-  <h2>Before you begin</h2>
-  <h3>Trail entrances</h3>
+<section class="mt-5">
+  <h2 id="before-you-begin" class="text-4xl font-bold">Before you begin</h2>
+  <h3 id="trail-entrances" class="text-2xl font-semibold">Trail entrances</h3>
   The hike is usually done North to South. The North entrance is at Tunyuan (屯原):<br>
   <ul>
-    <li><a href="https://www.openstreetmap.org/node/2419827013">OpenStreetMap</a></li>
-    <li><a href="https://goo.gl/maps/NBPYF8gyM4PiHPQC6">Google Maps</a></li>
+    <li><a href="https://www.openstreetmap.org/node/2419827013" class="underline">OpenStreetMap</a></li>
+    <li><a href="https://goo.gl/maps/NBPYF8gyM4PiHPQC6" class="underline">Google Maps</a></li>
   </ul>
   The end is at Aowanda (奧萬大):<br>
   <ul>
-    <li><a href="https://www.openstreetmap.org/way/237176221">OpenStreetMap</a></li>
-    <li><a href="https://goo.gl/maps/atwghpn88xFThgmW8">Google Maps</a></li>
+    <li><a href="https://www.openstreetmap.org/way/237176221" class="underline">OpenStreetMap</a></li>
+    <li><a href="https://goo.gl/maps/atwghpn88xFThgmW8" class="underline">Google Maps</a></li>
   </ul>
-  <h3>Transportation and Parking</h3>
+  <h3 id="transportation" class="text-2xl font-semibold">Transportation and Parking</h3>
   <p>
     It's difficult to do this hike without a car. You can try hitchhiking, but the road leading to
     the north entrance is used almost solely by hikers. Aowanda is quite popular so it might be
@@ -113,7 +158,7 @@ info:
       </li>
     </ol>
   </p>
-  <h3>Accommodation</h3>
+  <h3 id="accommodation" class="text-2xl font-semibold">Accommodation</h3>
   <p>
     Depending on your itinerary and hiking speed you might have to stay a night somewhere close to the
     entrance. A good option is Lushan Hot Spring Village (廬山溫泉), it has a lot of hotels and
@@ -124,8 +169,9 @@ info:
     you can come back here and take a shower for 100NT.
   </p>
 </section>
-<section class="prose lg:prose-lg">
-  <h2>Day 1</h2>
+<section class="">
+  <h2 id="the-hike" class="text-4xl font-bold">The Hike</h2>
+  <h3 id="day-1" class="text-2xl font-semibold">Day 1</h3>
   <p>
     We woke up and had our breakfast at the hotel at 4, hopped on the car and after a short drive were lucky enough to find a parking spot
     at the second parking lot. We were on the trail shortly after 5.
@@ -199,7 +245,7 @@ info:
   </p>
 </section>
 <section class="clearfix">
-  <h2>Day 2</h2>
+  <h3 id="day-2" class="text-2xl font-semibold">Day 2</h3>
   <p>
     It was around 2AM when first hikers woke up and started with their breakfast. We didn't sleep much the last few hours
     because of all the commotion, but got a bit more sleep after most hikers left waking up right before sunrise. The friendly porter from
@@ -290,7 +336,7 @@ info:
   {% include blog_img.html path="nenggaoandongjun/035.JPG" text="Nothing like a proper food made by the best cook on the mountain." %}
 </section>
 <section>
-  <h2>Day 3</h2>
+  <h3 id="day-3" class="text-2xl font-semibold">Day 3</h3>
   <p>
     We woke up to an almost empty campground again, just before sunrise. Took us a while to get organised and snap some sunrise pictures,
     but eventually we headed to the trail.
@@ -406,7 +452,7 @@ info:
   </p>
 </section>
 <section>
-  <h2>Day 4</h2>
+  <h3 id="day-4" class="text-2xl font-semibold">Day 4</h3>
   <p>
     We woke up just before sunrise again and headed out. We knew the road ahead was tricky and didn't want to cover any of it at night. The
     first hour or two was just more of the same - steep downhill, cross the river, steep downhill...
