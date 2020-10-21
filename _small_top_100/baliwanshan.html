@@ -1,0 +1,67 @@
+---
+layout: top_100
+author: Dawid
+excerpt: A sacred mountain of the Amis tribe, it's a relatively tough hike with rewarding views on the top.
+tags: "Small Top 100"
+info:
+  - dt: Difficulty
+    dd: "4/5"
+  - dt: Duration
+    dd: 3h40min
+  - dt: Date of the hike
+    dd: 2020-10-09
+  - dt: Group size
+    dd: 2 + 2, myself and Tati a bit behind Ada and Peggy
+  - dt: Public transport
+    dd: Nearest bus stop 8km away from the trail entrance (<a href="#transportation" class="underline">Transportation</a>)
+  - dt: Total length
+    dd: 9.6km
+  - dt: Total elevation gain
+    dd: 836m
+---
+
+<header>
+  <div class="bg-gray-500 p-4">
+    <div class="toc font-semibold mb-1">Table of contents</div>
+    <ol>
+      <li>
+        <a href="#general-information">General information</a>
+      </li>
+      <li>
+        <a href="#before-you-begin">Before you begin</a>
+        <ol>
+          <li class="ml-4"><a href="#accommodation">Accommodation</a></li>
+          <li class="ml-4"><a href="#transportation">Transportation and parking</a></li>
+          <li class="ml-4"><a href="#trail-entrances">Trail entrances</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#the-hike">The hike</a>
+        <ol>
+          <li class="ml-4"><a href="#day-1">Day 1</a></li>
+          <li class="ml-4"><a href="#day-2">Day 2</a></li>
+          <li class="ml-4"><a href="#day-3">Day 3</a></li>
+          <li class="ml-4"><a href="#day-4">Day 4</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#alternatives">Alternative itineraries</a>
+        <ol>
+          <li class="ml-4"><a href="#alt-6-days">6 days</a></li>
+          <li class="ml-4"><a href="#alt-5-days">5 days</a></li>
+          <li class="ml-4"><a href="#alt-3-days">3 days</a></li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+  <h2 id="general-information" class="text-4xl font-bold">General information</h2>
+  <!-- Add note about duration -->
+  <!-- TODO split to sections-->
+  <!-- TODO image overlay for mountain panoramas -->
+  {% for def in page.info %}
+    <dl class="flex my-1">
+      <dt class="w-2/5 font-semibold">{{def.dt}}</dt>
+      <dd class="w-2/5">{{def.dd}}</dd>
+    </dl>
+  {% endfor %}
+</header>

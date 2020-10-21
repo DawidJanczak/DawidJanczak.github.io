@@ -29,6 +29,8 @@ github_username:  dawidjanczak
 collections:
   top_100:
     output: true
+  small_top_100:
+    output: true
 
 # Build settings
 plugins:

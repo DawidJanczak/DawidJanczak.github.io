@@ -1,0 +1,17 @@
+---
+layout: default
+title: Small Top 100 Peaks
+---
+
+<h1 class="text-5xl font-bold">{{ page.title }}</h1>
+
+<ul>
+  {% for peak in site.small_top_100 %}
+    <li>
+      <h2>
+        <a href="{{ peak.url }}">{{ peak.title }}</a>
+      </h2>
+      {{ peak.excerpt }}
+    </li>
+  {% endfor %}
+</ul>

@@ -4,3 +4,5 @@
   link: /about
 - name: Top 100 peaks
   link: /top_100
+- name: Small Top 100 peaks
+  link: /small_top_100
