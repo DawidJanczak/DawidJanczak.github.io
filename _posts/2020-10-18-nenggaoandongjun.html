@@ -25,15 +25,17 @@ info:
     dd: "Yes"
   - dt: Closest Hot Spring
     dd: <a href="https://goo.gl/maps/bqSBCwEZaHBrcWYL8")>Lushan Hot Spring</a>
-headers:
-  - level: h2
-    text: General information
 ---
 <header>
   <div class="bg-gray-500 p-4">
     <div class="toc font-semibold mb-1">Table of contents</div>
     <ol>
-      <li><a href="#general-information">General information</a></li>
+      <li>
+        <a href="#general-information">General information</a>
+        <ol>
+          <li class="ml-4"><a href="#top-100">Top 100 Peaks</a></li>
+        </ol>
+      </li>
       <li>
         <a href="#before-you-begin">Before you begin</a>
         <ol>
@@ -63,17 +65,24 @@ headers:
   </div>
   <h2 id="general-information" class="text-4xl font-bold">General information</h2>
   <!-- Add note about duration -->
-  <!-- TODO more difficulty information, alternative plans -->
   <!-- TODO split to sections-->
-  <!-- TODO TOC -->
   <!-- TODO image overlay for mountain panoramas -->
-  <!-- TODO add list of Baiyue on this hike -->
   {% for def in page.info %}
     <dl class="flex my-1">
       <dt class="w-2/5 font-semibold">{{def.dt}}</dt>
       <dd class="w-2/5">{{def.dd}}</dd>
     </dl>
   {% endfor %}
+  <div>
+    <h3 id="top-100" class="text-2xl font-semibold">Top 100 peaks on this trail</h3>
+    <ul>
+      <li>No. 62 Nenggao Mountain (能高山), ele 3262m</li>
+      <li>No. 43 Nenggao South Peak (能高山南峰), ele 3349</li>
+      <li>No. 95 Guangtou Mountain (光頭山), ele 3060m</li>
+      <li>No. 87 Baishi Mountain (白石山), ele 3110m</li>
+      <li>No. 94 Andongjun Mountain (安東軍山), ele 3068m</li>
+    </ul>
+  </div>
   <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-8" role="alert">
     <div class="flex">
       <div class="py-1">
@@ -600,7 +609,7 @@ headers:
     </div>
   </div>
   <p>
-    This is where things get interesting, 3 days should be possible for the faster folks. Most of this trail is not runnable so you'll have to fast hike it.      
+    This is where things get interesting, 3 days should be possible for the faster folks. Most of this trail is not runnable so you'll have to fast hike it.
     The runnable sections include the Nenggao Cross Trail until the Monument, some parts of Guangtou Mt and the long section between Baishi
     Lake and Andongjun Mt.
     Downhill is very technical, but after that you could try and run the river and the trails that follows. That all being said you'll have to
