@@ -724,6 +724,10 @@ video {
   height: 16rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .text-sm {
   font-size: 0.875rem;
 }
@@ -926,6 +930,10 @@ video {
 
 .w-2\/5 {
   width: 40%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 @keyframes spin {
