@@ -27,7 +27,8 @@ url: "https://dawidjanczak.github.io/" # the base hostname & protocol for your s
 github_username:  dawidjanczak
 
 collections:
-  authors:
+  top_100:
+    output: true
 
 # Build settings
 plugins:

@@ -1,0 +1,18 @@
+---
+layout: default
+title: Top 100 Peaks
+---
+
+<h1>Top 100 Peaks</h1>
+<h2>Multi day hikes</h2>
+
+<ul>
+  {% for peak in site.top_100 %}
+    <li>
+      <h2>
+        <a href="{{ peak.url }}">{{ peak.title }}</a>
+      </h2>
+      {{ peak.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
