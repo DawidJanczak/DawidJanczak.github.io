@@ -8,8 +8,6 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  max-width: 50rem;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
@@ -17,6 +15,10 @@ h1,
 h2,
 strong {
   color: #333;
+}
+
+.hero {
+  background-image: url('/assets/images/hero.jpg');
 }
 
 .toc ol {

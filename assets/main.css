@@ -570,6 +570,12 @@ video {
   }
 }
 
+.divide-x > :not(template) ~ :not(template) {
+  --divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--divide-x-reverse)));
+}
+
 .bg-gray-500 {
   --bg-opacity: 1;
   background-color: #a0aec0;
@@ -598,6 +604,14 @@ video {
   --bg-opacity: 1;
   background-color: #ebf8ff;
   background-color: rgba(235, 248, 255, var(--bg-opacity));
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .border-red-400 {
@@ -672,8 +686,20 @@ video {
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
 }
 
 .clearfix:after {
@@ -692,6 +718,10 @@ video {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-64 {
+  height: 16rem;
 }
 
 .text-sm {
@@ -730,19 +760,24 @@ video {
   list-style-type: decimal;
 }
 
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
 
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-1 {
@@ -777,6 +812,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -809,9 +848,9 @@ video {
   padding-right: 1rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .shadow-md {
@@ -830,6 +869,12 @@ video {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.text-gray-100 {
+  --text-opacity: 1;
+  color: #f7fafc;
+  color: rgba(247, 250, 252, var(--text-opacity));
 }
 
 .text-gray-700 {
@@ -921,8 +966,6 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  max-width: 50rem;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
@@ -930,6 +973,10 @@ h1,
 h2,
 strong {
   color: #333;
+}
+
+.hero {
+  background-image: url('/assets/images/hero.jpg');
 }
 
 .toc ol {
