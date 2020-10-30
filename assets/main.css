@@ -946,6 +946,10 @@ video {
   text-decoration: underline;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1033,6 +1037,10 @@ strong {
 .toc li:before {
   content: counters(item, ".") " ";
   counter-increment: item;
+}
+
+a {
+  text-decoration: underline;
 }
 
 @media (min-width: 640px) {
