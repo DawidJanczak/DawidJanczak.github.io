@@ -782,6 +782,10 @@ video {
   list-style-position: inside;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .list-decimal {
   list-style-type: decimal;
 }
