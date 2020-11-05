@@ -12,7 +12,11 @@ module.exports = {
     '_small_top_100/*.html',
     '*.html'
   ],
-  theme: {},
+  theme: {
+    colors: {
+      accent: '#E6F2F2'
+    }
+  },
   variants: {},
   plugins: [
     require('@tailwindcss/typography')

@@ -6,10 +6,12 @@
 html {
   scroll-behavior: smooth;
   font-size: 14px;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -22,13 +24,9 @@ strong {
   background-image: url('https://storage.googleapis.com/taiwan-peaks/hero.jpg');
 }
 
-.toc ol {
-  counter-reset: item;
-}
-
-.toc li:before {
-  content: counters(item, ".") " ";
-  counter-increment: item;
+.toc { 
+  margin: 0 -999rem;
+  padding: 0 999rem;
 }
 
 a {
