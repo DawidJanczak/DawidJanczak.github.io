@@ -24,9 +24,11 @@ strong {
   background-image: url('https://storage.googleapis.com/taiwan-peaks/hero.jpg');
 }
 
-.toc { 
-  margin: 0 -999rem;
-  padding: 0 999rem;
+.full-width-bg {
+  margin-left: -999rem;
+  margin-right: -999rem;
+  padding-left: 999rem;
+  padding-right: 999rem;
 }
 
 a {

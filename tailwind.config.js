@@ -14,7 +14,8 @@ module.exports = {
   ],
   theme: {
     colors: {
-      accent: '#E6F2F2'
+      accent: '#E6F2F2',
+      'top-100-bg': '#4F6E83'
     }
   },
   variants: {},

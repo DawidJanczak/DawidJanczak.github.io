@@ -599,6 +599,12 @@ video {
   background-color: rgba(230, 242, 242, var(--bg-opacity));
 }
 
+.bg-top-100-bg {
+  --bg-opacity: 1;
+  background-color: #4F6E83;
+  background-color: rgba(79, 110, 131, var(--bg-opacity));
+}
+
 .bg-center {
   background-position: center;
 }
@@ -741,6 +747,10 @@ video {
   list-style-type: decimal;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -836,6 +846,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .px-12 {
@@ -946,9 +961,11 @@ strong {
   background-image: url('https://storage.googleapis.com/taiwan-peaks/hero.jpg');
 }
 
-.toc {
-  margin: 0 -999rem;
-  padding: 0 999rem;
+.full-width-bg {
+  margin-left: -999rem;
+  margin-right: -999rem;
+  padding-left: 999rem;
+  padding-right: 999rem;
 }
 
 a {
